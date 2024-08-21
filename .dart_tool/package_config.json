@@ -20,6 +20,12 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "animated_text_kit",
+      "rootUri": "file:///home/aswin/.pub-cache/hosted/pub.dev/animated_text_kit-4.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "args",
       "rootUri": "file:///home/aswin/.pub-cache/hosted/pub.dev/args-2.5.0",
       "packageUri": "lib/",
@@ -512,7 +518,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2024-08-21T14:40:26.822252Z",
+  "generated": "2024-08-21T16:32:58.842727Z",
   "generator": "pub",
   "generatorVersion": "3.5.0",
   "flutterRoot": "file:///home/aswin/snap/flutter/common/flutter",

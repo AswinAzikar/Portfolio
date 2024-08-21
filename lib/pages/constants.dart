@@ -15,7 +15,7 @@ var glassFilterSettings = BackdropFilter(
 );
 
 var decorationsGivenToTheContainer = BoxDecoration(
-  color: const Color.fromARGB(255, 39, 39, 39).withOpacity(0.2),
+  color: const Color.fromARGB(255, 170, 167, 167).withOpacity(0.2),
   borderRadius: BorderRadius.circular(20),
 );
 

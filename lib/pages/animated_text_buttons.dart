@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:personal_portfolio/gen/fonts.gen.dart';
 import 'package:personal_portfolio/pages/constants.dart';
@@ -40,19 +41,30 @@ class _AnimatedTextButtonsState extends State<AnimatedTextButtons> {
               });
             },
             style: TextButton.styleFrom(),
-            child: Text(
-              widget.title,
-              style: TextStyle(
-                backgroundColor: Colors.transparent,
-                fontFamily: FontFamily.ubuntu,
-                fontStyle: FontStyle.normal,
-                color: _isHovered
-                    ? themeColor
-                    : const Color.fromARGB(255, 198, 161, 228),
-                fontWeight: _isHovered ? FontWeight.w500 : FontWeight.w100,
-                fontSize: _isHovered ? 22 : 18,
-              ),
-            ),
+            child: _isHovered
+                ? AnimatedTextKit(animatedTexts: [
+                    ColorizeAnimatedText(
+                      widget.title,
+                      textStyle:
+                          TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                      colors: [
+                        const Color.fromARGB(255, 216, 240, 5),
+                        const Color.fromARGB(255, 219, 33, 243),
+                        Colors.pink
+                      ],
+                    )
+                  ])
+                : Text(
+                    widget.title,
+                    style: TextStyle(
+                      backgroundColor: Colors.transparent,
+                      fontFamily: FontFamily.ubuntu,
+                      fontStyle: FontStyle.normal,
+                      color: themeColor,
+                      fontWeight: FontWeight.w100,
+                      fontSize: 18,
+                    ),
+                  ),
           ),
         ),
         _isHovered
