@@ -10,10 +10,6 @@ args
 3.0
 file:///home/aswin/.pub-cache/hosted/pub.dev/args-2.5.0/
 file:///home/aswin/.pub-cache/hosted/pub.dev/args-2.5.0/lib/
-asset_cache
-2.18
-file:///home/aswin/.pub-cache/hosted/pub.dev/asset_cache-2.1.0/
-file:///home/aswin/.pub-cache/hosted/pub.dev/asset_cache-2.1.0/lib/
 async
 2.18
 file:///home/aswin/.pub-cache/hosted/pub.dev/async-2.11.0/
@@ -126,10 +122,6 @@ flutter_gen_runner
 2.17
 file:///home/aswin/.pub-cache/hosted/pub.dev/flutter_gen_runner-5.6.0/
 file:///home/aswin/.pub-cache/hosted/pub.dev/flutter_gen_runner-5.6.0/lib/
-flutter_lints
-3.1
-file:///home/aswin/.pub-cache/hosted/pub.dev/flutter_lints-4.0.0/
-file:///home/aswin/.pub-cache/hosted/pub.dev/flutter_lints-4.0.0/lib/
 frontend_server_client
 3.0
 file:///home/aswin/.pub-cache/hosted/pub.dev/frontend_server_client-4.0.0/
@@ -182,10 +174,6 @@ leak_tracker_testing
 3.2
 file:///home/aswin/.pub-cache/hosted/pub.dev/leak_tracker_testing-3.0.1/
 file:///home/aswin/.pub-cache/hosted/pub.dev/leak_tracker_testing-3.0.1/lib/
-lints
-3.1
-file:///home/aswin/.pub-cache/hosted/pub.dev/lints-4.0.0/
-file:///home/aswin/.pub-cache/hosted/pub.dev/lints-4.0.0/lib/
 logging
 2.19
 file:///home/aswin/.pub-cache/hosted/pub.dev/logging-1.2.0/
@@ -331,7 +319,7 @@ yaml
 file:///home/aswin/.pub-cache/hosted/pub.dev/yaml-3.1.2/
 file:///home/aswin/.pub-cache/hosted/pub.dev/yaml-3.1.2/lib/
 personal_portfolio
-3.5
+2.18
 file:///home/aswin/Desktop/Git%20Projects/Personal/personal_portfolio/
 file:///home/aswin/Desktop/Git%20Projects/Personal/personal_portfolio/lib/
 _macros

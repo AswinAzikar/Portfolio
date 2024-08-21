@@ -9,82 +9,6 @@
 
 import 'package:flutter/widgets.dart';
 
-class $AssetsFontsGen {
-  const $AssetsFontsGen();
-
-  /// File path: assets/fonts/ComicNeue-Bold.ttf
-  String get comicNeueBold => 'assets/fonts/ComicNeue-Bold.ttf';
-
-  /// File path: assets/fonts/ComicNeue-BoldItalic.ttf
-  String get comicNeueBoldItalic => 'assets/fonts/ComicNeue-BoldItalic.ttf';
-
-  /// File path: assets/fonts/ComicNeue-Italic.ttf
-  String get comicNeueItalic => 'assets/fonts/ComicNeue-Italic.ttf';
-
-  /// File path: assets/fonts/ComicNeue-Light.ttf
-  String get comicNeueLight => 'assets/fonts/ComicNeue-Light.ttf';
-
-  /// File path: assets/fonts/ComicNeue-LightItalic.ttf
-  String get comicNeueLightItalic => 'assets/fonts/ComicNeue-LightItalic.ttf';
-
-  /// File path: assets/fonts/ComicNeue-Regular.ttf
-  String get comicNeueRegular => 'assets/fonts/ComicNeue-Regular.ttf';
-
-  /// File path: assets/fonts/Kalam-Bold.ttf
-  String get kalamBold => 'assets/fonts/Kalam-Bold.ttf';
-
-  /// File path: assets/fonts/Kalam-Light.ttf
-  String get kalamLight => 'assets/fonts/Kalam-Light.ttf';
-
-  /// File path: assets/fonts/Kalam-Regular.ttf
-  String get kalamRegular => 'assets/fonts/Kalam-Regular.ttf';
-
-  /// File path: assets/fonts/Ubuntu-Bold.ttf
-  String get ubuntuBold => 'assets/fonts/Ubuntu-Bold.ttf';
-
-  /// File path: assets/fonts/Ubuntu-BoldItalic.ttf
-  String get ubuntuBoldItalic => 'assets/fonts/Ubuntu-BoldItalic.ttf';
-
-  /// File path: assets/fonts/Ubuntu-Italic.ttf
-  String get ubuntuItalic => 'assets/fonts/Ubuntu-Italic.ttf';
-
-  /// File path: assets/fonts/Ubuntu-Light.ttf
-  String get ubuntuLight => 'assets/fonts/Ubuntu-Light.ttf';
-
-  /// File path: assets/fonts/Ubuntu-LightItalic.ttf
-  String get ubuntuLightItalic => 'assets/fonts/Ubuntu-LightItalic.ttf';
-
-  /// File path: assets/fonts/Ubuntu-Medium.ttf
-  String get ubuntuMedium => 'assets/fonts/Ubuntu-Medium.ttf';
-
-  /// File path: assets/fonts/Ubuntu-MediumItalic.ttf
-  String get ubuntuMediumItalic => 'assets/fonts/Ubuntu-MediumItalic.ttf';
-
-  /// File path: assets/fonts/Ubuntu-Regular.ttf
-  String get ubuntuRegular => 'assets/fonts/Ubuntu-Regular.ttf';
-
-  /// List of all assets
-  List<String> get values => [
-        comicNeueBold,
-        comicNeueBoldItalic,
-        comicNeueItalic,
-        comicNeueLight,
-        comicNeueLightItalic,
-        comicNeueRegular,
-        kalamBold,
-        kalamLight,
-        kalamRegular,
-        ubuntuBold,
-        ubuntuBoldItalic,
-        ubuntuItalic,
-        ubuntuLight,
-        ubuntuLightItalic,
-        ubuntuMedium,
-        ubuntuMediumItalic,
-        ubuntuRegular
-      ];
-}
-
 class $AssetsPngsGen {
   const $AssetsPngsGen();
 
@@ -98,7 +22,6 @@ class $AssetsPngsGen {
 class Assets {
   Assets._();
 
-  static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsPngsGen pngs = $AssetsPngsGen();
 }
 
