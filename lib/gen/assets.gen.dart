@@ -22,10 +22,21 @@ class $AssetsPngsGen {
   List<AssetGenImage> get values => [bg, bg1];
 }
 
+class $AssetsSvgsGen {
+  const $AssetsSvgsGen();
+
+  /// File path: assets/svgs/grid-pattern.svg
+  String get gridPattern => 'assets/svgs/grid-pattern.svg';
+
+  /// List of all assets
+  List<String> get values => [gridPattern];
+}
+
 class Assets {
   Assets._();
 
   static const $AssetsPngsGen pngs = $AssetsPngsGen();
+  static const $AssetsSvgsGen svgs = $AssetsSvgsGen();
 }
 
 class AssetGenImage {

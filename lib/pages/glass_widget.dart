@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:personal_portfolio/pages/constants.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:personal_portfolio/gen/assets.gen.dart';
 import 'package:personal_portfolio/pages/text_button_panel.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
@@ -17,10 +18,20 @@ class _GlassWidgetState extends State<GlassWidget> {
     return Container(
       height: screenHeight * .6,
       width: double.maxFinite,
-      decoration: decorationsGivenToTheContainer,
+      //   decoration: decorationsGivenToTheContainer,
       child: Stack(
         children: [
-          glassFilterSettings,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SvgPicture.asset(
+                Assets.svgs.gridPattern,
+                fit: BoxFit.fill,
+              ),
+            ],
+          ),
+
+          //  glassFilterSettings,
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -54,11 +65,7 @@ class _GlassWidgetState extends State<GlassWidget> {
                           'Aswin Manmathan S',
                           textStyle: TextStyle(
                               fontSize: 50, fontWeight: FontWeight.w700),
-                          colors: [
-                            const Color.fromARGB(255, 255, 255, 255),
-                            const Color.fromARGB(255, 219, 33, 243),
-                            Colors.pink
-                          ],
+                          colors: [Colors.white, Color(0xffCBACF9)],
                         )
                       ]),
                       AnimatedTextKit(animatedTexts: [
@@ -68,11 +75,11 @@ class _GlassWidgetState extends State<GlassWidget> {
                             speed: Durations.medium1,
                             textStyle: TextStyle(
                                 fontSize: 30,
-                                color: Colors.white,
+                                color: const Color.fromARGB(255, 6, 17, 68),
                                 fontWeight: FontWeight.bold)),
                       ])
                     ],
-                  )
+                  ),
                 ],
               ),
             ],

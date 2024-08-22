@@ -19,6 +19,7 @@ dependencies:
   flutter_gen: ^5.6.0   # FlutterGen for generating assets
   dotted_border: ^2.1.0
   animated_text_kit: ^4.2.2
+  flutter_svg: ^2.0.10+1
 
 dev_dependencies:
   flutter_test:
@@ -33,33 +34,16 @@ flutter:
 
   # Declare your assets here.
   assets:
-    - assets/pngs/bg.png
-    - assets/pngs/bg1.png
+    - assets/pngs/
+    - assets/svgs/
 
   # Declare your fonts here.
   fonts:
-    - family: ComicNeue
+    - family: Inter
       fonts:
-        - asset: assets/fonts/ComicNeue-BoldItalic.ttf
-        - asset: assets/fonts/ComicNeue-Bold.ttf
-        - asset: assets/fonts/ComicNeue-Italic.ttf
-        - asset: assets/fonts/ComicNeue-LightItalic.ttf
-        - asset: assets/fonts/ComicNeue-Light.ttf
-        - asset: assets/fonts/ComicNeue-Regular.ttf
-
-    - family: Kalam
-      fonts:
-        - asset: assets/fonts/Kalam-Bold.ttf
-        - asset: assets/fonts/Kalam-Light.ttf
-        - asset: assets/fonts/Kalam-Regular.ttf
-
-    - family: Ubuntu
-      fonts:
-        - asset: assets/fonts/Ubuntu-BoldItalic.ttf
-        - asset: assets/fonts/Ubuntu-Bold.ttf
-        - asset: assets/fonts/Ubuntu-Italic.ttf
-        - asset: assets/fonts/Ubuntu-LightItalic.ttf
-        - asset: assets/fonts/Ubuntu-Light.ttf
-        - asset: assets/fonts/Ubuntu-MediumItalic.ttf
-        - asset: assets/fonts/Ubuntu-Medium.ttf
-        - asset: assets/fonts/Ubuntu-Regular.ttf
+        - asset: assets/fonts/Inter_18pt-Regular.ttf
+        - asset: assets/fonts/Inter_18pt-Bold.ttf
+        - asset: assets/fonts/Inter_18pt-Italic.ttf
+        - asset: assets/fonts/Inter_24pt-Regular.ttf
+        - asset: assets/fonts/Inter_24pt-Bold.ttf
+        - asset: assets/fonts/Inter_28pt-Regular.ttf

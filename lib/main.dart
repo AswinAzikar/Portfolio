@@ -13,15 +13,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData.dark(
+        
           useMaterial3: true,
         ).copyWith(
           textTheme: const TextTheme(
-            bodyLarge: TextStyle(fontFamily: 'Ubuntu'),
+            bodyLarge: TextStyle(fontFamily: 'inter'),
             bodyMedium: TextStyle(
-              fontFamily: 'Ubuntu',
+              fontFamily: 'inter',
             ),
             displayLarge:
-                TextStyle(fontFamily: 'Ubuntu', fontWeight: FontWeight.bold),
+                TextStyle(fontFamily: 'inter', fontWeight: FontWeight.bold),
           ),
         ),
         title: 'Aswin Manmathan S',

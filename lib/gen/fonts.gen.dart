@@ -10,12 +10,6 @@
 class FontFamily {
   FontFamily._();
 
-  /// Font family: ComicNeue
-  static const String comicNeue = 'ComicNeue';
-
-  /// Font family: Kalam
-  static const String kalam = 'Kalam';
-
-  /// Font family: Ubuntu
-  static const String ubuntu = 'Ubuntu';
+  /// Font family: Inter
+  static const String inter = 'Inter';
 }

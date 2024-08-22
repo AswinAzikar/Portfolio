@@ -9,29 +9,42 @@ class TextButtonPanel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.end,
-      children: [
-        const AnimatedTextButtons(
-          title: "Home",
+    double screenHeight = MediaQuery.of(context).size.height;
+    return Center(
+      child: Container(
+        padding: EdgeInsets.all(8),
+        height: screenHeight * .06,
+        decoration: BoxDecoration(
+            color: Colors.white.withOpacity(0.1),
+            borderRadius: BorderRadius.all(Radius.circular(20))),
+        child: Row(
+          
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const AnimatedTextButtons(
+              title: "Home",
+            ),
+            const AnimatedTextButtons(
+              title: "About",
+            ),
+            gapWidth,
+            const AnimatedTextButtons(
+              title: "Resume",
+            ),
+            gapWidth,
+            const AnimatedTextButtons(
+              title: "Projects",
+            ),
+            gapWidth,
+            const AnimatedTextButtons(
+              title: "Contact me",
+            ),
+            gapWidth,
+          ],
         ),
-        const AnimatedTextButtons(
-          title: "About",
-        ),
-        gapWidth,
-        const AnimatedTextButtons(
-          title: "Resume",
-        ),
-        gapWidth,
-        const AnimatedTextButtons(
-          title: "Projects",
-        ),
-        gapWidth,
-        const AnimatedTextButtons(
-          title: "Contact me",
-        ),
-        gapWidth,
-      ],
+      ),
     );
   }
 }

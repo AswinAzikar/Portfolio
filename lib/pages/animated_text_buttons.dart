@@ -45,12 +45,11 @@ class _AnimatedTextButtonsState extends State<AnimatedTextButtons> {
                 ? AnimatedTextKit(animatedTexts: [
                     ColorizeAnimatedText(
                       widget.title,
-                      textStyle:
-                          TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                      textStyle: TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.normal),
                       colors: [
-                        const Color.fromARGB(255, 216, 240, 5),
-                        const Color.fromARGB(255, 219, 33, 243),
-                        Colors.pink
+                        Colors.white,
+                        Color(0xffCBACF9),
                       ],
                     )
                   ])
@@ -58,31 +57,29 @@ class _AnimatedTextButtonsState extends State<AnimatedTextButtons> {
                     widget.title,
                     style: TextStyle(
                       backgroundColor: Colors.transparent,
-                      fontFamily: FontFamily.ubuntu,
                       fontStyle: FontStyle.normal,
                       color: themeColor,
-                      fontWeight: FontWeight.w100,
-                      fontSize: 18,
+                      fontSize: 12,
                     ),
                   ),
           ),
         ),
-        _isHovered
-            ? Transform(
-                transform: Matrix4.skewX(-0.3),
-                alignment: Alignment.center,
-                child: Container(
-                  height: 5,
-                  width: 15,
-                  decoration: BoxDecoration(
-                    color: themeColor,
-                  ),
-                ),
-              )
-            : const SizedBox(
-                height: 5,
-                width: 15,
-              ),
+        // _isHovered
+        //     ? Transform(
+        //         transform: Matrix4.skewX(-0.3),
+        //         alignment: Alignment.center,
+        //         child: Container(
+        //           height: 5,
+        //           width: 15,
+        //           decoration: BoxDecoration(
+        //             color: themeColor,
+        //           ),
+        //         ),
+        //       )
+        //     : const SizedBox(
+        //         height: 5,
+        //         width: 15,
+        //       ),
       ],
     );
   }
