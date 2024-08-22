@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:personal_portfolio/gen/assets.gen.dart';
+import 'package:personal_portfolio/pages/constants.dart';
 import 'package:personal_portfolio/pages/text_button_panel.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
@@ -18,15 +19,31 @@ class _GlassWidgetState extends State<GlassWidget> {
     return Container(
       height: screenHeight * .6,
       width: double.maxFinite,
-      //   decoration: decorationsGivenToTheContainer,
+      decoration: decorationsGivenToTheContainer,
       child: Stack(
         children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              SvgPicture.asset(
+                Assets.svgs.spotLeft,
+                fit: BoxFit.contain,
+                color: Colors.white.withOpacity(0.07),
+              ),
+              SvgPicture.asset(
+                Assets.svgs.spotRight,
+                fit: BoxFit.contain,
+                color: Colors.white.withOpacity(0.07),
+              )
+            ],
+          ),
+
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SvgPicture.asset(
                 Assets.svgs.gridPattern,
-                fit: BoxFit.fill,
+                fit: BoxFit.contain,
               ),
             ],
           ),
@@ -42,46 +59,74 @@ class _GlassWidgetState extends State<GlassWidget> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(
-                    width: screenHeight * 0.1,
+                  Text(
+                    "Elevating Software Development with",
+                    style: TextStyle(
+                        fontSize: 50,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white),
                   ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      AnimatedTextKit(animatedTexts: [
-                        ColorizeAnimatedText('Hi I\'m',
-                            textStyle: TextStyle(
-                                fontSize: 30, fontWeight: FontWeight.w700),
-                            colors: [
-                              Colors.amber,
-                              const Color.fromARGB(255, 219, 33, 243),
-                              Colors.pink
-                            ])
-                      ]),
-                      AnimatedTextKit(animatedTexts: [
-                        ColorizeAnimatedText(
-                          'Aswin Manmathan S',
-                          textStyle: TextStyle(
-                              fontSize: 50, fontWeight: FontWeight.w700),
-                          colors: [Colors.white, Color(0xffCBACF9)],
-                        )
-                      ]),
-                      AnimatedTextKit(animatedTexts: [
-                        TypewriterAnimatedText(
-                            "I'm  a \n Flutter Developer &  \n a Data Analyst",
-                            cursor: '_',
-                            speed: Durations.medium1,
-                            textStyle: TextStyle(
-                                fontSize: 30,
-                                color: const Color.fromARGB(255, 6, 17, 68),
-                                fontWeight: FontWeight.bold)),
-                      ])
-                    ],
-                  ),
+                  AnimatedTextKit(animatedTexts: [
+                    ColorizeAnimatedText(
+                      " Flutter",
+                      speed: Durations.long4,
+                      textStyle:
+                          TextStyle(fontSize: 50, fontWeight: FontWeight.w700),
+                      colors: [
+                        const Color.fromARGB(255, 226, 25, 142),
+                        const Color.fromARGB(255, 165, 86, 80),
+                        const Color.fromARGB(255, 27, 67, 179),
+                        Colors.black,
+                        Colors.white,
+                      ],
+                    )
+                  ]),
                 ],
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "driven by",
+                    style: TextStyle(
+                        fontSize: 50,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w700),
+                  ),
+                  AnimatedTextKit(animatedTexts: [
+                    ColorizeAnimatedText(
+                      " Data",
+                      speed: Durations.long4,
+                      textStyle:
+                          TextStyle(fontSize: 50, fontWeight: FontWeight.w700),
+                      colors: [
+                        const Color.fromARGB(255, 226, 25, 142),
+                        const Color.fromARGB(255, 165, 86, 80),
+                        const Color.fromARGB(255, 27, 67, 179),
+                        Colors.black,
+                        Colors.white,
+                      ],
+                    )
+                  ]),
+                  Text(
+                    " for",
+                    style: TextStyle(
+                        fontSize: 50,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white),
+                  ),
+                  Text(
+                    " precision.",
+                    style: TextStyle(
+                        fontSize: 50,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white),
+                  ),
+                ],
+              )
             ],
           )
         ],

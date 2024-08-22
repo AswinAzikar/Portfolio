@@ -1,6 +1,5 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:personal_portfolio/gen/fonts.gen.dart';
 import 'package:personal_portfolio/pages/constants.dart';
 
 class AnimatedTextButtons extends StatefulWidget {
@@ -22,6 +21,7 @@ class _AnimatedTextButtonsState extends State<AnimatedTextButtons> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         MouseRegion(
           onEnter: (_) {
@@ -40,7 +40,6 @@ class _AnimatedTextButtonsState extends State<AnimatedTextButtons> {
                 _isClicked = !_isClicked;
               });
             },
-            style: TextButton.styleFrom(),
             child: _isHovered
                 ? AnimatedTextKit(animatedTexts: [
                     ColorizeAnimatedText(
@@ -58,28 +57,13 @@ class _AnimatedTextButtonsState extends State<AnimatedTextButtons> {
                     style: TextStyle(
                       backgroundColor: Colors.transparent,
                       fontStyle: FontStyle.normal,
+                      fontWeight: FontWeight.w100,
                       color: themeColor,
-                      fontSize: 12,
+                      fontSize: 18,
                     ),
                   ),
           ),
         ),
-        // _isHovered
-        //     ? Transform(
-        //         transform: Matrix4.skewX(-0.3),
-        //         alignment: Alignment.center,
-        //         child: Container(
-        //           height: 5,
-        //           width: 15,
-        //           decoration: BoxDecoration(
-        //             color: themeColor,
-        //           ),
-        //         ),
-        //       )
-        //     : const SizedBox(
-        //         height: 5,
-        //         width: 15,
-        //       ),
       ],
     );
   }

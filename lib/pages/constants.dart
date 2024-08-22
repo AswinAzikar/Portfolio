@@ -19,6 +19,8 @@ var decorationsGivenToTheContainer = BoxDecoration(
   borderRadius: BorderRadius.circular(20),
 );
 
+
+Color specialColorforDarkBlue =  Color(0xffCBACF9);
 Color themeColor = Colors.white;
 SizedBox gapHeight = const SizedBox(height: 8);
 SizedBox gapWidth = const SizedBox(width: 8);

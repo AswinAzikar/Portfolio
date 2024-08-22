@@ -13,7 +13,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData.dark(
-        
           useMaterial3: true,
         ).copyWith(
           textTheme: const TextTheme(
@@ -21,8 +20,9 @@ class MyApp extends StatelessWidget {
             bodyMedium: TextStyle(
               fontFamily: 'inter',
             ),
-            displayLarge:
-                TextStyle(fontFamily: 'inter', fontWeight: FontWeight.bold),
+            displayLarge: TextStyle(
+              fontFamily: 'inter',
+            ),
           ),
         ),
         title: 'Aswin Manmathan S',

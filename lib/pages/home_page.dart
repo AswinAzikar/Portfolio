@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import 'package:personal_portfolio/pages/glass_widget.dart';
@@ -24,6 +23,15 @@ class _HomePageState extends State<HomePage> {
                 padding: const EdgeInsets.all(10),
                 child: const GlassWidget(),
               ),
+              Row(
+                children: [
+                  Container(
+                    child: Column(
+                      children: [],
+                    ),
+                  )
+                ],
+              )
             ],
           ),
         ]),

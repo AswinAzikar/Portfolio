@@ -18,14 +18,10 @@ class TextButtonPanel extends StatelessWidget {
             color: Colors.white.withOpacity(0.1),
             borderRadius: BorderRadius.all(Radius.circular(20))),
         child: Row(
-          
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const AnimatedTextButtons(
-              title: "Home",
-            ),
             const AnimatedTextButtons(
               title: "About",
             ),

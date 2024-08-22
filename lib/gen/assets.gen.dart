@@ -28,8 +28,14 @@ class $AssetsSvgsGen {
   /// File path: assets/svgs/grid-pattern.svg
   String get gridPattern => 'assets/svgs/grid-pattern.svg';
 
+  /// File path: assets/svgs/spot_Left.svg
+  String get spotLeft => 'assets/svgs/spot_Left.svg';
+
+  /// File path: assets/svgs/spot_Right.svg
+  String get spotRight => 'assets/svgs/spot_Right.svg';
+
   /// List of all assets
-  List<String> get values => [gridPattern];
+  List<String> get values => [gridPattern, spotLeft, spotRight];
 }
 
 class Assets {
