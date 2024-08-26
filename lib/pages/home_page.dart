@@ -10,6 +10,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  ScrollController scrollController = ScrollController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,11 +18,14 @@ class _HomePageState extends State<HomePage> {
       body: Center(
         child: Stack(children: [
           ListView(
+            controller: scrollController,
             scrollDirection: Axis.vertical,
             children: [
               Padding(
                 padding: const EdgeInsets.all(10),
-                child: const GlassWidget(),
+                child: GlassWidget(
+                  scroller: scrollController,
+                ),
               ),
               Row(
                 children: [

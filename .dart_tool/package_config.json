@@ -506,6 +506,12 @@
       "languageVersion": "3.4"
     },
     {
+      "name": "web_smooth_scroll",
+      "rootUri": "file:///home/aswin/.pub-cache/hosted/pub.dev/web_smooth_scroll-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
       "name": "web_socket",
       "rootUri": "file:///home/aswin/.pub-cache/hosted/pub.dev/web_socket-0.1.6",
       "packageUri": "lib/",
@@ -536,7 +542,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2024-08-22T06:15:09.118700Z",
+  "generated": "2024-08-22T16:55:50.156598Z",
   "generator": "pub",
   "generatorVersion": "3.5.0",
   "flutterRoot": "file:///home/aswin/snap/flutter/common/flutter",
